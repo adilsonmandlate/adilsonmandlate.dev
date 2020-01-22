@@ -5,6 +5,17 @@ module.exports = {
     author: `@adilsonmandlate`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: [`300`, `700`],
+          },
+        ],
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
