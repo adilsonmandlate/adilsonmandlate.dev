@@ -5,7 +5,9 @@ const WelcomeInfo = () => {
   return (
     <S.Container>
       <div>
-        <S.Greetings>Hi,</S.Greetings>
+        <S.Greetings>
+          Hi<S.Comma>,</S.Comma>
+        </S.Greetings>
         <S.Greetings>
           I'm Adilson Mandlate
           <S.Dot />

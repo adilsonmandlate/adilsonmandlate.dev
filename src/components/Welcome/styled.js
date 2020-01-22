@@ -28,3 +28,7 @@ export const Dot = styled.span`
   border-radius: 50%;
   border: calc(5px + (30 - 5) * (100vw - 400px) / (6400 - 400)) solid #00bcd4;
 `;
+
+export const Comma = styled.span`
+  color: #e74c3c;
+`;

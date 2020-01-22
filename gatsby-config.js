@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Personal Website`,
-    description: `My personal website`,
+    title: `Adilson Mandlate`,
+    description: `Adilson Mandlate, front end developer in Mozambique`,
     author: `@adilsonmandlate`,
   },
   plugins: [
@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Adilson Mandlate Home`,
+        name: `Adilson Mandlate`,
         short_name: `adilson`,
         start_url: `/`,
         background_color: `#663399`,
