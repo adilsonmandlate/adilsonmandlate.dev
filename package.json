@@ -1,7 +1,7 @@
 {
   "name": "adilsonmandlate-website",
   "private": true,
-  "description": "A very simple website",
+  "description": "Adilson's personal website",
   "version": "0.1.0",
   "author": "Adilson Mandlate <adilsonmandlate@gmail.com>",
   "dependencies": {
