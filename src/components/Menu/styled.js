@@ -13,8 +13,9 @@ export const Container = styled.ul`
   }
 
   a {
+    position: relative;
     font-weight: 500;
-    font-size: 18px;
+    font-size: calc(14px + (80 - 14) * (100vw - 400px) / (6400 - 400));
     color: #fff;
     text-decoration: none;
 
