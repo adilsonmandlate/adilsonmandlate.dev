@@ -9,7 +9,10 @@ const Layout = ({ children }) => {
     <S.LayoutWrapper>
       <GlobalStyles />
       <BackText />
-      <S.LayoutMain>{children}</S.LayoutMain>
+      <S.LayoutContainer>
+        <S.LayoutMain>{children}</S.LayoutMain>
+        <p>Menu vem aqui</p>
+      </S.LayoutContainer>
     </S.LayoutWrapper>
   );
 };
