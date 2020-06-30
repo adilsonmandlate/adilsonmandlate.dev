@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 export const LayoutWrapper = styled.section`
   display: grid;
-  grid-template-columns: 1fr 100px;
+  grid-template-columns: 1fr 150px;
 `;
 
 export const LayoutMain = styled.main`
+  display: flex;
+  flex-direction: column;
   margin: auto;
   padding-left: 20vw;
   padding-right: 80px;
