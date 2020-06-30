@@ -2,16 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   display: flex;
-  min-height: 100vh;
+  flex-grow: 10;
   align-items: center;
   justify-content: left;
 `;
 
 export const Greetings = styled.h1`
   color: #fff;
-  font-size: calc(50px + (400 - 50) * (100vw - 400px) / (6400 - 400));
-  font-weight: 700;
-  line-height: calc(50px + (400 - 50) * (100vw - 400px) / (6400 - 400));
+  font-size: calc(60px + (400 - 60) * (100vw - 400px) / (6400 - 400));
+  font-weight: 600;
 `;
 
 export const Description = styled.div`
