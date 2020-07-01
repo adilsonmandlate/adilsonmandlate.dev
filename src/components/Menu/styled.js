@@ -34,6 +34,14 @@ export const Container = styled.ul`
       transition: transform 0.3s;
     }
 
+    &.active {
+      color: #00bcd4;
+    }
+
+    &.active:after {
+      transform: scaleX(1);
+    }
+
     &:hover {
       &:after {
         transform: scaleX(1);

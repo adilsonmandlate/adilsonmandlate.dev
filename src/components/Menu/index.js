@@ -6,10 +6,14 @@ const Menu = () => {
   return (
     <S.Container>
       <li>
-        <Link to="/work">Home</Link>
+        <Link activeClassName={"active"} to="/">
+          Home
+        </Link>
       </li>
       <li>
-        <Link to="/work">Work</Link>
+        <Link activeClassName={"active"} to="/work">
+          Work
+        </Link>
       </li>
     </S.Container>
   );
