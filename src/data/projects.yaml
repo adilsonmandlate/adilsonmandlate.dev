@@ -1,0 +1,24 @@
+---
+- name: "FLASHCARDS (WIP)"
+  description: "Something to be added here 6"
+  image: "../images/portfolio/flashcards.png"
+
+- name: "AURORA"
+  description: "Something to be added here"
+  image: "../images/portfolio/aurora.png"
+
+- name: "MONTEPIO GA"
+  description: "Something to be added here 2"
+  image: "../images/portfolio/montepio.png"
+
+- name: "HATCH EU"
+  description: "Something to be added here 3"
+  image: "../images/portfolio/hatch.png"
+
+- name: "GOVREUNIAO"
+  description: "Something to be added here 4"
+  image: "../images/portfolio/govreuniao.png"
+
+- name: "GOVENSINO"
+  description: "Something to be added here 5"
+  image: "../images/portfolio/govensino.png"
