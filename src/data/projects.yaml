@@ -1,0 +1,24 @@
+---
+- name: "FLASHCARDS (WIP)"
+  description: "A personal iOS application, built with React-Native, that allows the user to collect flashcards and take quizzes. You can create decks, add cards to the decks and take quizzes on those decks."
+  image: "../images/portfolio/flashcards.png"
+
+- name: "AURORA"
+  description: "Aurora is a powerful cloud-based mission control software suite designed to control a single satellite or a complete constellation through a user-friendly, fully customizable control interface, with support for telemetry, trajectory updates, telecommand, and downstream through graphical and command-line controls."
+  image: "../images/portfolio/aurora.png"
+
+- name: "MONTEPIO GA"
+  description: "A platform, for Montepio Gestão de Activos, designed to manage financial assets, with a focus on the management of investment funds."
+  image: "../images/portfolio/montepio.png"
+
+- name: "HATCH SPACE"
+  description: "A platform for HATCH Space, an European Space Research and innovation organisation. A web portal that makes the findings of the European space projects available to professionals in the field and citizens interested in space-related information."
+  image: "../images/portfolio/hatch.png"
+
+- name: "GOVREUNIAO"
+  description: "Meeting management platform of the Ministry of Science and Technology of Mozambique. It has a built-in chat, file and topics management and a presentation mode that shares the screen to all participants in the meeting."
+  image: "../images/portfolio/govreuniao.png"
+
+- name: "GOVENSINO"
+  description: "Information and Management System for Vocational Technical Education Institutions of Mozambique. Designed to list and manage data of all technical institutions of Mozambique."
+  image: "../images/portfolio/govensino.png"

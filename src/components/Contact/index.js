@@ -3,9 +3,14 @@ import * as S from "./styled";
 
 const Contact = () => {
   return (
-    <a href="mailto: adilsonmandlate@gmail.com">
-      <S.MailIcon size={52} title="Talk with me" />
-    </a>
+    <S.ContactContainer>
+      <div>
+        <S.Label>Email</S.Label>
+        <S.Email href="mailto: adilsonmandlate@gmail.com">
+          adilsonmandlate@gmail.com
+        </S.Email>
+      </div>
+    </S.ContactContainer>
   );
 };
 

@@ -10,14 +10,21 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Roboto`,
-            variants: [`300`, `700`],
+            family: `Open Sans`,
+            variants: [`300`, `600`],
           },
         ],
       },
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
