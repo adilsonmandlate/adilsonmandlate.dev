@@ -4,6 +4,9 @@ export const Container = styled.ul`
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
+  height: 100vh;
+  position: sticky;
+  top: 0px;
   padding: 20px 0;
   font-size: calc(14px + (50 - 14) * (100vw - 400px) / (6400 - 400));
 
