@@ -38,11 +38,8 @@ export const Container = styled.ul`
       color: #00bcd4;
     }
 
-    &.active:after {
-      transform: scaleX(1);
-    }
-
-    &:hover {
+    &:hover,
+    &.active {
       &:after {
         transform: scaleX(1);
       }
