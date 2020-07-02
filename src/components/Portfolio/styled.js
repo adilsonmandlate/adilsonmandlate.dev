@@ -26,7 +26,12 @@ export const ProjectDetails = styled.li`
   margin: 0 0 80px;
   display: grid;
   gap: 50px;
-  grid-template-columns: 320px 1fr;
+  grid-template-rows: minmax(200px, auto) 1fr;
+
+  @media (min-width: 1100px) {
+    grid-template-rows: none;
+    grid-template-columns: 320px 1fr;
+  }
 `;
 
 export const ProjectImage = styled(Img)`
