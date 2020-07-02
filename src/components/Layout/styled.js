@@ -9,6 +9,7 @@ export const LayoutMain = styled.main`
   display: flex;
   flex-direction: column;
   margin: auto;
+  width: 100%;
   padding-left: 20vw;
   padding-right: 80px;
   color: #fff;
