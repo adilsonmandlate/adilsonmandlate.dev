@@ -35,7 +35,7 @@ const Portfolio = () => {
       <div style={{ paddingTop: "50px" }}>
         <ul>
           {edges.map((project, key) => {
-            return <Project key={key} project={project.node} />;
+            return <Project key={`project-${key}`} project={project.node} />;
           })}
         </ul>
       </div>

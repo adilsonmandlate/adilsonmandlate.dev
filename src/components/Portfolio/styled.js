@@ -7,7 +7,11 @@ export const Container = styled.div`
 
 export const PageTitle = styled.h2`
   font-weight: 600;
-  font-size: calc(10px + (200 - 10) * (100vw - 200px) / (6400 - 200));
+  font-size: 2.7rem;
+
+  @media (min-width: 800px) {
+    font-size: 3.5rem;
+  }
 `;
 
 export const TitleSeparator = styled.hr`
@@ -31,11 +35,32 @@ export const ProjectDetails = styled.li`
   @media (min-width: 1100px) {
     grid-template-rows: none;
     grid-template-columns: 320px 1fr;
+
+    &:nth-child(even) {
+      grid-template-columns: 1fr 320px;
+    }
+
+    &:nth-child(even) > section,
+    &:nth-child(odd) > div {
+      order: 1;
+    }
+
+    &:nth-child(odd) > section,
+    &:nth-child(even) > div {
+      order: 2;
+    }
   }
 `;
 
+export const ProjectDescriptionContainer = styled.section``;
+
 export const ProjectImage = styled(Img)`
   max-width: 300px;
+  justify-self: center;
+
+  @media (min-width: 1100px) {
+    justify-self: left;
+  }
 `;
 
 export const ProjectName = styled.h3`
