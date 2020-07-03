@@ -21,6 +21,10 @@ export const LayoutMain = styled.main`
   position: relative;
   z-index: 1;
 
+  @media (max-width: 480px) {
+    padding: 70px 20px 0;
+  }
+
   @media (min-width: 800px) {
     padding-top: 0;
     padding-left: 20vw;
