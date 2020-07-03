@@ -7,7 +7,11 @@ export const Container = styled.div`
 
 export const PageTitle = styled.h2`
   font-weight: 600;
-  font-size: calc(10px + (200 - 10) * (100vw - 200px) / (6400 - 200));
+  font-size: 2.7rem;
+
+  @media (min-width: 800px) {
+    font-size: 3.5rem;
+  }
 `;
 
 export const TitleSeparator = styled.hr`
@@ -36,6 +40,11 @@ export const ProjectDetails = styled.li`
 
 export const ProjectImage = styled(Img)`
   max-width: 300px;
+  justify-self: center;
+
+  @media (min-width: 800px) {
+    justify-self: left;
+  }
 `;
 
 export const ProjectName = styled.h3`
