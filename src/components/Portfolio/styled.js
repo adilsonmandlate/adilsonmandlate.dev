@@ -35,14 +35,30 @@ export const ProjectDetails = styled.li`
   @media (min-width: 1100px) {
     grid-template-rows: none;
     grid-template-columns: 320px 1fr;
+
+    &:nth-child(even) {
+      grid-template-columns: 1fr 320px;
+    }
+
+    &:nth-child(even) > section,
+    &:nth-child(odd) > div {
+      order: 1;
+    }
+
+    &:nth-child(odd) > section,
+    &:nth-child(even) > div {
+      order: 2;
+    }
   }
 `;
+
+export const ProjectDescriptionContainer = styled.section``;
 
 export const ProjectImage = styled(Img)`
   max-width: 300px;
   justify-self: center;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1100px) {
     justify-self: left;
   }
 `;
