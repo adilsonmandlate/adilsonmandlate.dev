@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const LayoutWrapper = styled.section`
   display: grid;
-  grid-template-columns: 1fr 150px;
+
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 150px;
+  }
 `;
 
 export const LayoutMain = styled.main`
@@ -12,8 +15,13 @@ export const LayoutMain = styled.main`
   width: 100%;
   padding-left: 20vw;
   padding-right: 80px;
+  padding-top: 70px;
   color: #fff;
   min-height: 100vh;
   position: relative;
   z-index: 1;
+
+  @media (min-width: 800px) {
+    padding-top: 0;
+  }
 `;
