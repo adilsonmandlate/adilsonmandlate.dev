@@ -7,7 +7,7 @@ const Menu = () => {
     <S.Container>
       <li>
         <Link activeClassName={"active"} to="/">
-          Home
+          Yo!
         </Link>
       </li>
       <li>
