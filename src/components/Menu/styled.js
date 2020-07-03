@@ -2,20 +2,37 @@ import styled from "styled-components";
 
 export const Container = styled.ul`
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   justify-content: center;
-  height: 100vh;
-  position: sticky;
+  height: 70px;
+  position: fixed;
   top: 0px;
-  padding: 20px 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  background-color: #1f1f1f;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
   font-size: calc(14px + (50 - 14) * (100vw - 400px) / (6400 - 400));
 
+  @media (min-width: 800px) {
+    height: 100vh;
+    position: sticky;
+    padding: 20px 0;
+    box-shadow: none;
+    background-color: transparent;
+    flex-direction: column-reverse;
+  }
+
   li {
-    padding: 30px;
+    padding: 10px;
     align-self: center;
     text-transform: uppercase;
     color: #fff;
-    transform: rotate(-90deg);
+
+    @media (min-width: 800px) {
+      transform: rotate(-90deg);
+      padding: 30px;
+    }
   }
 
   a {
