@@ -13,7 +13,7 @@ export const LayoutMain = styled.main`
   flex-direction: column;
   margin: auto;
   width: 100%;
-  padding-left: 20vw;
+  padding-left: 80px;
   padding-right: 80px;
   padding-top: 70px;
   color: #fff;
@@ -23,5 +23,6 @@ export const LayoutMain = styled.main`
 
   @media (min-width: 800px) {
     padding-top: 0;
+    padding-left: 20vw;
   }
 `;
