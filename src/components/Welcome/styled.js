@@ -13,7 +13,7 @@ export const Greetings = styled.h1`
   font-weight: 600;
 `;
 
-export const Description = styled.div`
+export const Description = styled.p`
   color: #96979c;
   margin: 30px 0;
   font-weight: 300;
