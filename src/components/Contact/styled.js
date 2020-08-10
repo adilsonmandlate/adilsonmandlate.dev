@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  flex-grow: 1;
   padding: 0 0 10px 0;
   font-size: calc(10px + (50 - 10) * (100vw - 400px) / (6400 - 400));
 `;

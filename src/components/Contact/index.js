@@ -5,7 +5,6 @@ const Contact = () => {
   return (
     <S.ContactContainer>
       <div>
-        <S.Label>Email</S.Label>
         <S.Email href="mailto: adilsonmandlate@gmail.com">
           adilsonmandlate@gmail.com
         </S.Email>
