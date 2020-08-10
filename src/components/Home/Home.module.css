@@ -9,14 +9,15 @@
 
 .name {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 70px;
-  font-size: calc(5px + (200 - 5) * (100vw - 200px) / (6400 - 200));
+  font-size: calc(5px + (70 - 5) * (100vw - 70px) / (6400 - 200));
 }
 
 .nameImg {
-  margin: 0 20px;
+  margin: 20px 0;
   max-width: 200px;
 }
 

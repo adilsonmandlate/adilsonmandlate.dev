@@ -8,7 +8,7 @@ const Home = () => {
     query GetProfileImage {
       file(relativePath: { eq: "profile-bw.png" }) {
         childImageSharp {
-          fixed(width: 140) {
+          fixed(width: 100) {
             ...GatsbyImageSharpFixed_tracedSVG
           }
         }
@@ -24,8 +24,8 @@ const Home = () => {
     <section className={styles.container}>
       <div>
         <h1 className={styles.name}>
-          Adilson Mandlate
           <Img className={styles.nameImg} fixed={childImageSharp.fixed} />
+          Adilson Mandlate
         </h1>
         <h1 className={styles.greetings}>
           Front End Developer
