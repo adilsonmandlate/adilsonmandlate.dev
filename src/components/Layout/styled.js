@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const LayoutWrapper = styled.section`
-  display: grid;
-
-  @media (min-width: 800px) {
-    grid-template-columns: 1fr 150px;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `;
 
 export const LayoutMain = styled.main`
@@ -13,20 +11,15 @@ export const LayoutMain = styled.main`
   flex-direction: column;
   margin: auto;
   width: 100%;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 70px;
+  padding-left: 10vw;
+  padding-right: 10vw;
   color: #fff;
-  min-height: 100vh;
   position: relative;
   z-index: 1;
+  flex-grow: 5;
 
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
     padding: 70px 20px 0;
   }
-
-  @media (min-width: 800px) {
-    padding-top: 0;
-    padding-left: 20vw;
-  }
+*/
 `;
