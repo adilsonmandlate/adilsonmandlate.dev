@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Menu from "../Menu";
 import * as S from "./styled";
 import GlobalStyles from "../../styles/global";
+import Footer from "../Footer/Footer";
 
 const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
       <GlobalStyles />
       <S.LayoutMain>{children}</S.LayoutMain>
-      <Menu />
+      <Footer />
     </S.LayoutWrapper>
   );
 };
