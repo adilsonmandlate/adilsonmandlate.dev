@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
-import Portfolio from "../components/Portfolio";
+import Portfolio from "../components/Portfolio/Portfolio";
 
 const WorkPage = () => (
   <Layout>

@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import Img from "gatsby-image";
 import styles from "./Home.module.css";
 
@@ -32,7 +32,9 @@ const Home = () => {
           <span className={styles.dot} />
         </h1>
 
-        <p className={styles.description}>(Not) Your avarage developer</p>
+        <Link to={"/work"} className={styles.link}>
+          Check my work
+        </Link>
       </div>
     </section>
   );
