@@ -1,15 +1,13 @@
 import React from "react";
 
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
-import WelcomeInfo from "../components/Welcome";
-import Contact from "../components/Contact";
+import Home from "../components/Home/Home";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="" />
-    <WelcomeInfo />
-    <Contact />
+    <Home />
   </Layout>
 );
 

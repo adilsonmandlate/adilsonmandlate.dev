@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "./styled";
+import styles from "./Portfolio.module.css";
 import Project from "./Project";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -29,9 +29,9 @@ const Portfolio = () => {
   } = useStaticQuery(projectsQuery);
 
   return (
-    <S.Container>
-      <S.PageTitle>My projects</S.PageTitle>
-      <S.TitleSeparator />
+    <section className={styles.container}>
+      <h2 className={styles.pageTitle}>My projects</h2>
+      <hr className={styles.titleSeparator} />
       <div style={{ paddingTop: "50px" }}>
         <ul>
           {edges.map((project, key) => {
@@ -39,7 +39,7 @@ const Portfolio = () => {
           })}
         </ul>
       </div>
-    </S.Container>
+    </section>
   );
 };
 

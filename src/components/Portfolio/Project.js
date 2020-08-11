@@ -1,15 +1,19 @@
 import React from "react";
-import * as S from "./styled";
+import Img from "gatsby-image";
+import styles from "./Portfolio.module.css";
 
 const Project = ({ project }) => {
   return (
-    <S.ProjectDetails>
-      <S.ProjectImage fixed={project.image.childImageSharp.fixed} />
-      <S.ProjectDescriptionContainer>
-        <S.ProjectName>{project.name}</S.ProjectName>
-        <S.ProjectDescription>{project.description}</S.ProjectDescription>
-      </S.ProjectDescriptionContainer>
-    </S.ProjectDetails>
+    <li className={styles.projectDetails}>
+      <Img
+        className={styles.projectImage}
+        fixed={project.image.childImageSharp.fixed}
+      />
+      <section>
+        <h3 className={styles.projectName}>{project.name}</h3>
+        <p classNAme={styles.projectDesciption}>{project.description}</p>
+      </section>
+    </li>
   );
 };
 

@@ -1,0 +1,13 @@
+.container {
+  color: #fff;
+  flex-grow: 0.5;
+  display: flex;
+  padding: 0 0 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  font-size: calc(8px + (40 - 8) * (100vw - 40px) / (6400 - 100));
+}
