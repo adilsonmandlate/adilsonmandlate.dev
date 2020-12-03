@@ -1,53 +1,37 @@
 module.exports = {
   siteMetadata: {
-    title: `Adilson Mandlate`,
-    description: `Adilson Mandlate, front end developer in Mozambique`,
-    author: `@adilsonmandlate`,
+    title: "Adilson Mandlate",
+    description: "Adilson Mandlate, front end developer based in Mozambique",
+    author: "@adilsonmandlate",
   },
+
   plugins: [
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: "gatsby-plugin-postcss",
       options: {
-        fonts: [
-          {
-            family: `Open Sans`,
-            variants: [`300`, `600`],
-          },
-        ],
+        postCssPlugins: [require("postcss-preset-env")({ stage: 0 })],
       },
     },
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-yaml`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/data`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Adilson Mandlate`,
         short_name: `Adilson`,
         start_url: `/`,
-        background_color: `#1a1a1a`,
-        theme_color: `#96979c`,
+        background_color: `#fff`,
+        theme_color: `#c0392b`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/profile.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: ["EB Garamond:700", "Inter:400"],
+      },
+    },
   ],
 };
