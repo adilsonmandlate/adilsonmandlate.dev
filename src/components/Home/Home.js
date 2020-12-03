@@ -1,40 +1,42 @@
 import React from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
-import Img from "gatsby-image";
 import styles from "./Home.module.css";
 
 const Home = () => {
-  const imageQuery = graphql`
-    query GetProfileImage {
-      file(relativePath: { eq: "profile-bw.png" }) {
-        childImageSharp {
-          fixed(width: 100) {
-            ...GatsbyImageSharpFixed_tracedSVG
-          }
-        }
-      }
-    }
-  `;
-
-  const {
-    file: { childImageSharp },
-  } = useStaticQuery(imageQuery);
-
   return (
     <section className={styles.container}>
-      <div>
-        <h1 className={styles.name}>
-          <Img className={styles.nameImg} fixed={childImageSharp.fixed} />
-          Adilson Mandlate
-        </h1>
-        <h1 className={styles.greetings}>
-          Front End Developer
-          <span className={styles.dot} />
-        </h1>
-
-        <Link to={"/work"} className={styles.link}>
-          Check my work
-        </Link>
+      <div className="text">
+        <h1 className={styles.name}>Adilson Mandlate</h1>
+        <p className={styles.about}>
+          I'm a front end developer who makes things work beautifully. I have an
+          extensive experience with{" "}
+          <a
+            alt="React site"
+            target="_blank"
+            rel="noreferrer"
+            href="https://reactjs.org"
+          >
+            React
+          </a>
+          , and at the moment, gaining some with{" "}
+          <a
+            alt="Vue site"
+            target="_blank"
+            rel="noreferrer"
+            href="https://vuejs.org"
+          >
+            Vue
+          </a>
+          , creating complex systems and products that have positive impact on
+          the world. Currently revolutionizing wind energy sector at{" "}
+          <a
+            alt="BladeInsight"
+            target="_blank"
+            rel="noreferrer"
+            href="https://site.bladeinsight.com"
+          >
+            BladeInsight.
+          </a>
+        </p>
       </div>
     </section>
   );
