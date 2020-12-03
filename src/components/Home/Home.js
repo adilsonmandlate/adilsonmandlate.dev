@@ -10,7 +10,7 @@ const Home = () => {
           I'm a front end developer who makes things work beautifully. I have an
           extensive experience with{" "}
           <a
-            alt="React site"
+            alt="React"
             target="_blank"
             rel="noreferrer"
             href="https://reactjs.org"
@@ -19,7 +19,7 @@ const Home = () => {
           </a>
           , and at the moment, gaining some with{" "}
           <a
-            alt="Vue site"
+            alt="Vue"
             target="_blank"
             rel="noreferrer"
             href="https://vuejs.org"

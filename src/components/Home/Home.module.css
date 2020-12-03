@@ -19,10 +19,14 @@
   opacity: 0.9;
 }
 
-.about a {
-  color: #c0392b;
+.about a[alt*="React"] {
+  color: #61dafb;
+}
+
+.about a[alt*="Vue"] {
+  color: #41b883;
 }
 
 .about a[alt*="BladeInsight"] {
-  color: #1abc9c;
+  color: #e33f56;
 }
