@@ -1,0 +1,28 @@
+.container {
+  height: calc(100vh - 55px); /** TODO: Fix this little hack*/
+  align-items: center;
+  display: flex;
+}
+
+.name {
+  font-family: "EB Garamond", serif;
+  font-size: 80px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.about {
+  font-size: 22px;
+  line-height: 32px;
+  max-width: 900px;
+  opacity: 0.9;
+}
+
+.about a {
+  color: #c0392b;
+}
+
+.about a[alt*="BladeInsight"] {
+  color: #1abc9c;
+}

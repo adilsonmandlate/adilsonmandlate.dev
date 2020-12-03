@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["EB Garamond:700", "Inter:400"],
+        fonts: ["EB Garamond\:700", "Inter\:400"],
       },
     },
   ],
