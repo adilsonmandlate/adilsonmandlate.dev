@@ -17,7 +17,7 @@ const Home = () => {
           >
             React
           </a>
-          , and at the moment, gaining some with{" "}
+          , and some with{" "}
           <a
             alt="Vue"
             target="_blank"
@@ -27,15 +27,7 @@ const Home = () => {
             Vue
           </a>
           , creating complex systems and products that have positive impact on
-          the world. Currently revolutionizing wind energy sector at{" "}
-          <a
-            alt="BladeInsight"
-            target="_blank"
-            rel="noreferrer"
-            href="https://site.bladeinsight.com"
-          >
-            BladeInsight.
-          </a>
+          the world.
         </p>
       </div>
     </section>
