@@ -27,7 +27,6 @@ module.exports = {
         icon: `src/images/profile.png`,
       },
     },
-    "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
