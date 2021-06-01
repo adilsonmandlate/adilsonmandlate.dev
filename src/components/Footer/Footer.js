@@ -1,13 +1,12 @@
-import React from "react";
-import styles from "./Footer.module.css";
-import Contact from "../Contact/Contact";
-
-const Footer = () => {
+export const Footer = ({ ...props }) => {
   return (
-    <footer className={styles.container}>
-      <Contact />
+    <footer {...props}>
+      <a
+        className="text-gray-800 dark:text-white"
+        href="mailto:adilsonmandlate@gmail.com"
+      >
+        adilsonmandlate@gmail.com
+      </a>
     </footer>
   );
 };
-
-export default Footer;
