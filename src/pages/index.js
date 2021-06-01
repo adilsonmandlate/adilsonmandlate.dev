@@ -1,14 +1,22 @@
-import React from "react";
+import Head from "next/head";
+import { Fragment } from "react";
 
-import Layout from "../components/Layout/Layout";
-import SEO from "../components/seo";
-import Home from "../components/Home/Home";
+export default function Home() {
+  return (
+    <Fragment>
+      <Head>
+        <title>Adilson Mandlate | Front end developer</title>
+      </Head>
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="" />
-    <Home />
-  </Layout>
-);
+      <h1 className="text-6xl md:text-7xl font-serif text-title dark:text-white font-bold mb-5">
+        Adilson Mandlate
+      </h1>
 
-export default IndexPage;
+      <p className="text-lg md:text-2xl leading-7 md:leading-9 max-w-4xl font-sans text-gray-800 dark:text-white">
+        I'm a front end developer who makes things work beautifuly, with an
+        experience creating bespoke complex systems and products that have
+        positive impact on the world.
+      </p>
+    </Fragment>
+  );
+}
