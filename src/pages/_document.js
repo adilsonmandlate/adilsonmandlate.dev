@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en" className="min-h-full">
         <Head>
+        <meta name="google-site-verification" content="ts6KM6Dv4SPMIMaIRryYAkGrXLKIKqaU1dXkihI-bQ0" />
           <meta name="description" content="Adilson Mandlate | Front end developer based in Mozambique."/>
           <meta property="og:description" content="Adilson Mandlate | Front end developer based in Mozambique"/>
           <meta property="og:type" content="website"/>
