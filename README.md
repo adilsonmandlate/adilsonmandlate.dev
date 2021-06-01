@@ -1,12 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8b303aed-d8d0-477f-99d4-ec33a9ad74f4/deploy-status)](https://app.netlify.com/sites/adilsonmandlate/deploys)
+# Adilson Mandlate - Personal Website
 
-# Adilson Mandlate - Website
-
-Personal website.
-
-Currently using:
-
-- [Gatsby](https://www.gatsbyjs.org)
-- [React](https://reactjs.org)
-- [Styled Components](https://styled-components.com)
-- [Netlify](https://www.netlify.com)
+Personal website built with [NextJS](https://nextjs.org) and [TailwindCSS](https://tailwindcss.com).
+You can view this at [adilsonmandlate](https://adilsonmandlate.dev).
