@@ -5,19 +5,25 @@ class MyDocument extends Document {
     return (
       <Html lang="en" className="min-h-full">
         <Head>
-          <meta
-            name="description"
-            content="Adilson Mandlate, front end developer."
-          />
+          <meta name="description" content="Adilson Mandlate | Front end developer based in Mozambique."/>
+          <meta property="og:description" content="Adilson Mandlate | Front end developer based in Mozambique"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:image" content="/icon-512.png"/>
+          <meta property="twitter:image" content="/icon-512.png"/>
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:creator" content="Adilson Mandlate"/>
+          <meta name="twitter:title" content="Adilson Mandlate | Front end developer"/>
+          <meta name="twitter:text:title" content="Adilson Mandlate | Front end developer"/>
+          <meta name="twitter:description" content="Adilson Mandlate | Front end developer based in Mozambique"/>
           <link
             rel="apple-touch-icon"
             sizes="192x192"
-            href="/apple-touch-icon-192x192.png"
+            href="/icon-192.png"
           />
           <link
             rel="apple-touch-icon"
             sizes="512x512"
-            href="/apple-touch-icon-512x512.png"
+            href="/icon-512.png"
           />
           <link
             rel="apple-touch-icon"
