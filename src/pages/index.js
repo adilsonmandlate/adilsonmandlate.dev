@@ -13,7 +13,7 @@ export default function Home() {
       </h1>
 
       <p className="text-lg md:text-2xl leading-7 md:leading-9 max-w-4xl font-sans text-gray-800 dark:text-white">
-        I'm a front end developer who makes things work beautifuly, with an
+        I'm a front end developer who makes things work beautifully, with an
         experience creating bespoke complex systems and products that have
         positive impact on the world.
       </p>
