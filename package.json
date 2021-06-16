@@ -1,6 +1,6 @@
 {
   "name": "adilsonmandlate",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "Adilson's personal website",
   "private": true,
   "keywords": [
@@ -18,9 +18,15 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "gray-matter": "^4.0.3",
+    "mdx-prism": "^0.3.3",
     "next": "10.2.3",
+    "next-mdx-remote": "^3.0.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "rehype": "^11.0.0",
+    "tailwindcss": "^2.1.2"
   },
   "repository": {
     "type": "git",
@@ -32,7 +38,6 @@
   "devDependencies": {
     "autoprefixer": "^10.2.6",
     "postcss": "^8.3.0",
-    "prettier": "^2.3.0",
-    "tailwindcss": "^2.1.2"
+    "prettier": "^2.3.0"
   }
 }
