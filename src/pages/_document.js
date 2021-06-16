@@ -5,27 +5,37 @@ class MyDocument extends Document {
     return (
       <Html lang="en" className="min-h-full">
         <Head>
-        <meta name="google-site-verification" content="ts6KM6Dv4SPMIMaIRryYAkGrXLKIKqaU1dXkihI-bQ0" />
-          <meta name="description" content="Adilson Mandlate | Front end developer based in Mozambique."/>
-          <meta property="og:description" content="Adilson Mandlate | Front end developer based in Mozambique"/>
-          <meta property="og:type" content="website"/>
-          <meta property="og:image" content="/icon-512.png"/>
-          <meta property="twitter:image" content="/icon-512.png"/>
-          <meta name="twitter:card" content="summary_large_image"/>
-          <meta name="twitter:creator" content="Adilson Mandlate"/>
-          <meta name="twitter:title" content="Adilson Mandlate | Front end developer"/>
-          <meta name="twitter:text:title" content="Adilson Mandlate | Front end developer"/>
-          <meta name="twitter:description" content="Adilson Mandlate | Front end developer based in Mozambique"/>
-          <link
-            rel="apple-touch-icon"
-            sizes="192x192"
-            href="/icon-192.png"
+          <meta
+            name="google-site-verification"
+            content="ts6KM6Dv4SPMIMaIRryYAkGrXLKIKqaU1dXkihI-bQ0"
           />
-          <link
-            rel="apple-touch-icon"
-            sizes="512x512"
-            href="/icon-512.png"
+          <meta
+            name="description"
+            content="Adilson Mandlate | Front end developer based in Mozambique."
           />
+          <meta
+            property="og:description"
+            content="Adilson Mandlate | Front end developer based in Mozambique."
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="/icon-512.png" />
+          <meta property="twitter:image" content="/icon-512.png" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:creator" content="Adilson Mandlate" />
+          <meta
+            name="twitter:title"
+            content="Adilson Mandlate | Front end developer"
+          />
+          <meta
+            name="twitter:text:title"
+            content="Adilson Mandlate | Front end developer"
+          />
+          <meta
+            name="twitter:description"
+            content="Adilson Mandlate | Front end developer based in Mozambique."
+          />
+          <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png" />
+          <link rel="apple-touch-icon" sizes="512x512" href="/icon-512.png" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
