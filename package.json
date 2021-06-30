@@ -14,14 +14,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
     "gray-matter": "^4.0.3",
     "mdx-prism": "^0.3.3",
-    "next": "10.2.3",
+    "next": "^11.0.1",
     "next-mdx-remote": "^3.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -35,8 +37,20 @@
   "bugs": {
     "url": "https://github.com/adilsonmandlate/adilsonmandlate.dev/issues"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "prettier --write \"src/**/*.{js,jsx,json,md}\"",
+      "npm run lint -- --fix"
+    ]
+  },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "postcss": "^8.3.0",
     "prettier": "^2.3.0"
   }
