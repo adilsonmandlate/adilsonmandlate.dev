@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en" className="min-h-full">
         <Head>
+          <meta name="robots" content="follow, index" />
           <meta
             name="google-site-verification"
             content="ts6KM6Dv4SPMIMaIRryYAkGrXLKIKqaU1dXkihI-bQ0"
@@ -55,7 +56,7 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/site.webmanifest" />
         </Head>
-        <body className="bg-white text-gray-900 dark:bg-gray-700 dark:text-gray-300 min-h-screen">
+        <body className="bg-white text-gray-900 dark:bg-gray-900  dark:text-gray-200 min-h-screen">
           <Main />
           <NextScript />
         </body>
