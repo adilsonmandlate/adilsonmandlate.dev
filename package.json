@@ -1,5 +1,5 @@
 {
-  "name": "adilsonmandlate",
+  "name": "adilsonmandlate.dev",
   "version": "1.0.1",
   "description": "Adilson's personal website",
   "private": true,
@@ -27,7 +27,9 @@
     "next-mdx-remote": "3.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "rehype": "^1.0.0",
+    "rehype": "^11.0.0",
+    "rehype-parse": "^7.0.1",
+    "unified": "^9.2.1",
     "tailwindcss": "2.1.2"
   },
   "repository": {
