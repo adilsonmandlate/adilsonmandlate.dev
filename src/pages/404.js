@@ -15,9 +15,12 @@ export default function Custom404() {
         404 | Not found
       </h1>
 
-      <p className="text-lg md:text-2xl leading-9 max-w-4xl font-sans text-gray-800 dark:text-white">
-        Sorry, but the page ${`you're`} trying to get ${`doesn't`} exist. Maybe
-        go <Link href="/">home</Link>?
+      <p className="text-xl leading-9 max-w-4xl font-sans text-gray-800 dark:text-white">
+        Sorry, but the page you're trying to get doesn't exist. Maybe go{" "}
+        <Link href="/">
+          <a>home</a>
+        </Link>
+        ?
       </p>
     </Fragment>
   );
