@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className="grid grid-rows-app">
       <Navbar />
-      <div className="min-h-app pt-20 flex justify-center self-center">
+      <div className="min-h-app pt-14 flex justify-center self-center">
         <main className="max-w-3xl p-12 h-full m-auto">
           <Component {...pageProps} />
         </main>
