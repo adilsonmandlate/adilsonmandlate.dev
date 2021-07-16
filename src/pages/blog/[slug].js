@@ -1,21 +1,34 @@
+import Head from "next/head";
 import mdxPrism from "mdx-prism";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import { getPostBySlug, getAllPosts, getPostSlugs } from "../../lib/api";
+import { getPostBySlug, getAllPosts } from "../../lib/api";
 
 export default function Post({ source, frontMatter }) {
   return (
-    <div>
-      <main>
-        <div className="border-b-2 border-gray-200 mb-4">
-          <h2 className="text-3xl font-bold">{frontMatter.title}</h2>
-        </div>
-        <div className="prose">
-          <MDXRemote {...source} />
-        </div>
-      </main>
-    </div>
+    <article className="flex flex-col justify-center items-start w-full">
+      <Head>
+        <title>
+          {frontMatter.title} - Adilson Mandlate | Front end developer
+        </title>
+      </Head>
+
+      <h1 className="text-4xl md:text-5xl font-bold tracking-tight md:leading-tight">
+        {frontMatter.title}
+      </h1>
+      <div className="flex flex-row justify-start items-center mt-5 mb-5 text-gray-500">
+        <p className="text-sm ">July 11, 2021</p>
+        <span className="mx-3 " aria-label="separator">
+          -
+        </span>
+        <p className="text-sm ">11 min read</p>
+      </div>
+
+      <div className="prose dark:prose-dark">
+        <MDXRemote {...source} />
+      </div>
+    </article>
   );
 }
 
@@ -39,6 +52,7 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const posts = getAllPosts();
+
   const paths = posts.map((slug) => ({ params: { slug } }));
 
   return {

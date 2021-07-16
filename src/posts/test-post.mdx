@@ -1,18 +1,42 @@
 ---
-title: Test blog post
+title: Test blog post with long title an long title.
 description: First blog, only for test purposes.
 ---
 
-## Test title
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget dictum libero, ac suscipit tortor.
+Curabitur sed hendrerit dolor. Fusce aliquam rutrum ex, ut scelerisque tortor.
+Ut in luctus quam. Praesent convallis quis nunc sed eleifend.
 
-Here's the thing. I can render code **blocks**, check this out:
+Nunc eget nunc quis lectus ullamcorper consequat id et augue.
+Cras cursus dui id purus bibendum placerat eu et neque.
+Vestibulum mollis molestie turpis, vel volutpat felis placerat vitae.
+Sed malesuada aliquam efficitur.
 
-```jsx{6,7,8,9}
+In consectetur sapien nibh, nec convallis velit vestibulum nec. Phasellus eu dolor varius, rhoncus odio eget, interdum diam.
+Nam sed dapibus libero. Nulla suscipit nisi vitae dolor commodo eleifend.
+Etiam consequat imperdiet quam, nec pulvinar metus tristique sed.
+
+Ut ut mollis nunc, consequat lobortis magna. Duis at accumsan est, eu elementum dui.
+Sed faucibus euismod ligula, eu gravida ipsum semper nec. Duis congue, mauris sed dictum consequat, ipsum ligula pellentesque massa, vel blandit nisl ipsum vel erat.
+Donec at ligula sagittis, suscipit diam ac, tincidunt lectus.
+
+I can also render code **blocks**, check this out:
+
+```jsx{3,4,5,6,7,8}
 import React, { useState, useEffect, useRef } from 'react';
 
 function counter() {
-  let [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
+  const [example, setExample] = useState(null));
+  useEffect(() => {
+    setExample("Something");
+  });
 
-  return <h1 onClick={setCount(count + 1)}>{count}</h1>;
+  return (
+    <>
+      <h1 onClick={setCount(count + 1)}>{count}</h1>
+      <span>Example: {example}</span>
+    </>;
+  )
 }
 ```
