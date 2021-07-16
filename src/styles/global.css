@@ -2,9 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100, 800;
+  src: url(/fonts/InterVar.woff2) format("woff2");
+}
+
 @layer base {
   a {
     @apply underline;
-    color: #399c89;
+    @apply text-green-500;
   }
+}
+
+/** Code snippets styling */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #011222;
+  color: #1abc9c;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #8292a2;
+}
+
+.token.punctuation,
+.token.plain-text {
+  color: #fff;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #1abc9c;
+}
+
+.token.boolean,
+.token.number {
+  color: #fff;
+}
+
+.token.selector,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #fff;
+}
+
+.token.attr-name {
+  color: #3498db;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #fff;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #ef6306;
+}
+
+.token.keyword {
+  color: #3498db;
+}
+
+.token.imports {
+  color: #1abc9c;
+}
+
+.token.regex,
+.token.important {
+  color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.mdx-marker {
+  border-left: 3px solid #1abc9c;
+  background-color: rgba(26, 66, 103, 0.5);
 }
