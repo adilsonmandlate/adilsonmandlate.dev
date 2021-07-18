@@ -15,7 +15,7 @@ const Navbar = () => {
         </a>
       </Link>
 
-      <Link href="/blog/test-post">
+      <Link href="/blog/">
         <a className="text-gray-800 dark:text-gray-50 no-underline">Blog</a>
       </Link>
     </nav>
