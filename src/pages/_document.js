@@ -6,6 +6,13 @@ class MyDocument extends Document {
       <Html lang="en" className="min-h-full">
         <Head>
           <meta name="robots" content="follow, index" />
+          <link
+            rel="preload"
+            href="/fonts/InterVar.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
           <meta
             name="google-site-verification"
             content="ts6KM6Dv4SPMIMaIRryYAkGrXLKIKqaU1dXkihI-bQ0"
@@ -56,7 +63,7 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/site.webmanifest" />
         </Head>
-        <body className="bg-white text-gray-900 dark:bg-gray-900  dark:text-gray-200 min-h-screen">
+        <body className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 min-h-screen">
           <Main />
           <NextScript />
         </body>
