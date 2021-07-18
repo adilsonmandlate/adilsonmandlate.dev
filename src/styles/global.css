@@ -17,6 +17,11 @@
   }
 }
 
+html {
+  min-width: 300px;
+  scroll-behavior: smooth;
+}
+
 .custom-nav {
   backdrop-filter: blur(15px);
   @apply bg-opacity-50;
