@@ -16,6 +16,18 @@
   }
 }
 
+.custom-nav {
+  backdrop-filter: blur(15px);
+  @apply bg-opacity-50;
+}
+
+@supports not (backdrop-filter: none) {
+  .custom-nav {
+    backdrop-filter: blur(0);
+    @apply bg-opacity-100;
+  }
+}
+
 /** Code snippets styling */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
