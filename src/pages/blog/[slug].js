@@ -3,7 +3,9 @@ import mdxPrism from "mdx-prism";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
+import { format, parseISO } from "date-fns";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
+import readingTime from "reading-time";
 
 export default function Post({ source, frontMatter }) {
   return (
@@ -18,11 +20,13 @@ export default function Post({ source, frontMatter }) {
         {frontMatter.title}
       </h1>
       <div className="flex flex-row justify-start items-center mt-5 mb-5 text-gray-500">
-        <p className="text-sm ">July 11, 2021</p>
+        <p className="text-sm ">
+          {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyy")}
+        </p>
         <span className="mx-3 " aria-label="separator">
           -
         </span>
-        <p className="text-sm ">11 min read</p>
+        <p className="text-sm ">{frontMatter.readingTime.text}</p>
       </div>
 
       <div className="prose dark:prose-dark">
@@ -46,7 +50,10 @@ export async function getStaticProps({ params }) {
   });
 
   return {
-    props: { source: mdxSource, frontMatter: data },
+    props: {
+      source: mdxSource,
+      frontMatter: { readingTime: readingTime(content), ...data },
+    },
   };
 }
 
