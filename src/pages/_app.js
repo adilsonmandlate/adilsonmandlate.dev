@@ -6,8 +6,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className="grid grid-rows-app">
       <Navbar />
-      <div className="min-h-app pt-14 flex justify-center self-center">
-        <main className="max-w-3xl p-12 h-full m-auto">
+      <div className="min-h-app pt-24 flex justify-center self-center">
+        <main className="max-w-3xl px-6 md:px-12 h-full m-auto">
           <Component {...pageProps} />
         </main>
       </div>
