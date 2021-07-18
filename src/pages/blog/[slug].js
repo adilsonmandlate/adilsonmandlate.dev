@@ -9,7 +9,7 @@ import readingTime from "reading-time";
 
 export default function Post({ source, frontMatter }) {
   return (
-    <article className="flex flex-col justify-center items-start w-full">
+    <article className="flex flex-col justify-center items-start w-full mb-5">
       <Head>
         <title>
           {frontMatter.title} - Adilson Mandlate | Front end developer
@@ -19,14 +19,12 @@ export default function Post({ source, frontMatter }) {
       <h1 className="text-4xl md:text-5xl font-bold tracking-tight md:leading-tight">
         {frontMatter.title}
       </h1>
-      <div className="flex flex-row justify-start items-center mt-5 mb-5 text-gray-500">
-        <p className="text-sm ">
-          {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyy")}
-        </p>
+      <div className="flex flex-row justify-start items-center text-sm mt-5 mb-5 text-gray-500 dark:text-gray-100">
+        <p>{format(parseISO(frontMatter.publishedAt), "MMMM dd, yyy")}</p>
         <span className="mx-3 " aria-label="separator">
           -
         </span>
-        <p className="text-sm ">{frontMatter.readingTime.text}</p>
+        <p>{frontMatter.readingTime.text}</p>
       </div>
 
       <div className="prose dark:prose-dark">
