@@ -18,6 +18,9 @@ module.exports = {
       minHeight: {
         app: "calc(100vh - 50px)",
       },
+      height: {
+        main: "calc(100% - 6rem)",
+      },
       textColor: {
         title: "#2c3e50",
       },
