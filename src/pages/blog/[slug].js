@@ -20,7 +20,7 @@ export default function Post({ source, frontMatter }) {
         {frontMatter.title}
       </h1>
       <div className="flex flex-row justify-start items-center text-sm mt-5 mb-5 text-gray-500 dark:text-gray-100">
-        <p>{format(parseISO(frontMatter.publishedAt), "MMMM dd, yyy")}</p>
+        <p>{format(parseISO(frontMatter.date), "MMMM dd, yyy")}</p>
         <span className="mx-3 " aria-label="separator">
           -
         </span>
