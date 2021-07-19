@@ -24,4 +24,12 @@ const getPostBySlug = (slug) => {
   return fileContent;
 };
 
-export { getPostSlugs, getPostBySlug, getAllPosts };
+const getAllPostsData = () => {
+  return getAllPosts().map((slug) => {
+    const fullPath = join(POST_DIR, `${slug}.mdx`);
+    const fileContent = fs.readFileSync(fullPath, "utf8");
+    return { fileContent, slug };
+  });
+};
+
+export { getAllPostsData, getPostSlugs, getPostBySlug, getAllPosts };
