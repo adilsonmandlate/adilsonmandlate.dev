@@ -18,16 +18,18 @@ const BlogIndex = ({ posts }) => (
       <p>Once upon a time, I wrote about...</p>
     </header>
 
-    {posts.map((post) => {
-      return (
-        <BlogPost
-          key={post.title}
-          title={post.title}
-          description={post.description}
-          slug={post.slug}
-        />
-      );
-    })}
+    <section>
+      {posts.map((post) => {
+        return (
+          <BlogPost
+            key={post.title}
+            title={post.title}
+            description={post.description}
+            slug={post.slug}
+          />
+        );
+      })}
+    </section>
   </Fragment>
 );
 
