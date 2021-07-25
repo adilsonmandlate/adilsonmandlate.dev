@@ -7,9 +7,9 @@ const Post = ({ title, description, slug, date }) => {
       <Link href={`/blog/${slug}`}>
         <a className="w-full no-underline">
           <div>
-            <h3 className="text-xl font-medium md:text-3xl mb-1 text-gray-800 dark:text-gray-50">
+            <h2 className="text-xl font-medium md:text-3xl mb-1 text-gray-800 dark:text-gray-50">
               {title}
-            </h3>
+            </h2>
             <p className="mb-3 text-gray-600 dark:text-gray-200">
               {description}
             </p>
