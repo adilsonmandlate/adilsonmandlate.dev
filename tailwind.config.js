@@ -13,13 +13,13 @@ module.exports = {
         sans: ["Inter", ...fontFamily.sans],
       },
       gridTemplateRows: {
-        app: "1fr 50px",
+        app: "1fr 130px",
       },
       minHeight: {
         app: "calc(100vh - 50px)",
       },
       height: {
-        main: "calc(100% - 6rem)",
+        main: "calc(100% - 5rem)",
       },
       textColor: {
         title: "#2c3e50",
