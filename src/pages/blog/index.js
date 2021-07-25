@@ -10,7 +10,7 @@ const BlogIndex = ({ posts }) => (
       <title>Blog - Adilson Mandlate | Front end developer</title>
     </Head>
 
-    <header className="mb-10">
+    <header className="pb-20">
       <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-black dark:text-white">
         Blog
       </h1>
@@ -18,7 +18,7 @@ const BlogIndex = ({ posts }) => (
       <p>Once upon a time, I wrote about...</p>
     </header>
 
-    <section>
+    <ul>
       {posts.map((post) => {
         return (
           <BlogPost
@@ -26,10 +26,11 @@ const BlogIndex = ({ posts }) => (
             title={post.title}
             description={post.description}
             slug={post.slug}
+            date={post.date}
           />
         );
       })}
-    </section>
+    </ul>
   </Fragment>
 );
 
