@@ -19,12 +19,12 @@ export default function Post({ source, frontMatter }) {
       <h1 className="text-4xl md:text-5xl font-bold tracking-tight md:leading-tight">
         {frontMatter.title}
       </h1>
-      <div className="flex flex-row justify-start items-center text-sm mt-5 mb-5 text-gray-500 dark:text-gray-100">
-        <p>{format(parseISO(frontMatter.date), "MMMM dd, yyy")}</p>
-        <span className="mx-3 " aria-label="separator">
-          -
+      <div className="flex flex-row justify-start items-center text-sm mt-5 mb-5 text-gray-500 dark:text-gray-300">
+        <span>
+          Post published on{" "}
+          <time>{format(parseISO(frontMatter.date), "MMMM dd, yyy")}</time>,
+          with about {frontMatter.readingTime.text} time
         </span>
-        <p>{frontMatter.readingTime.text}</p>
       </div>
 
       <div className="prose dark:prose-dark">
