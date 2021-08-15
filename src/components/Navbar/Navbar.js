@@ -18,16 +18,7 @@ const Navbar = () => {
       </Link>
 
       <Link href="/blog/">
-        <a
-          className={`
-            ${
-              router.pathname === "/blog"
-                ? "underline font-bold"
-                : "no-underline"
-            } text-gray-800 dark:text-gray-50`}
-        >
-          Blog
-        </a>
+        <a className="no-underline text-gray-800 dark:text-gray-50">Blog</a>
       </Link>
     </nav>
   );
