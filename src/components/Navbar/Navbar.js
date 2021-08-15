@@ -15,9 +15,9 @@ const Navbar = () => {
         </a>
       </Link>
 
-      <Link href="/blog/">
+      {/* <Link href="/blog/">
         <a className="no-underline text-gray-800 dark:text-gray-50">Blog</a>
-      </Link>
+      </Link> */}
     </nav>
   );
 };
