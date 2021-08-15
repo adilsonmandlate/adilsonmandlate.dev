@@ -4,7 +4,7 @@ import { Navbar } from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="grid grid-rows-app min-h-screen justify-items-center pt-24">
+    <div className="grid grid-rows-app min-h-screen justify-items-center pt-48">
       <Navbar />
       <main className="max-w-5xl w-full px-6 md:px-12 h-full my-auto">
         <Component {...pageProps} />

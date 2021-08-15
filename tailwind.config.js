@@ -19,7 +19,7 @@ module.exports = {
         app: "calc(100vh - 50px)",
       },
       height: {
-        main: "calc(100% - 5rem)",
+        main: "calc(100% - 7rem)",
       },
       textColor: {
         title: "#2c3e50",
