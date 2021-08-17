@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         <main className="max-w-5xl w-full px-6 md:px-12 h-full my-auto">
           <Component {...pageProps} />
         </main>
-        <Footer className="max-w-full w-full h-full flex justify-center items-center" />
+        <Footer />
       </div>
     </ThemeProvider>
   );
