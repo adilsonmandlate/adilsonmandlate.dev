@@ -22,6 +22,7 @@ const Navbar = () => {
         <Link href="/blog/">
           <a className="no-underline text-gray-800 dark:text-gray-50">Blog</a>
         </Link>
+        <div className="text-gray-300 mx-7">•</div>
         <button
           aria-label="Toggle dark mode"
           type="button"
@@ -32,7 +33,7 @@ const Navbar = () => {
             viewBox="0 0 24 24"
             fill="currentColor"
             stroke="currentColor"
-            className="w-4 h-4 mx-7"
+            className="w-4 h-4"
           >
             {resolvedTheme === "dark" ? (
               <>
