@@ -10,7 +10,7 @@ const BlogIndex = ({ posts }) => (
       <title>Blog - Adilson Mandlate | Front end developer</title>
     </Head>
 
-    <header className="pb-20">
+    <header className="pb-16">
       <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-black dark:text-white">
         Blog
       </h1>
