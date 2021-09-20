@@ -14,6 +14,7 @@ module.exports = {
       },
       gridTemplateRows: {
         app: "1fr 100px",
+        mobile: "1fr 140px",
       },
       minHeight: {
         app: "calc(100vh - 50px)",
