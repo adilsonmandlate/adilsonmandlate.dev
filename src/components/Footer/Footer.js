@@ -1,7 +1,7 @@
 export const Footer = ({ ...props }) => {
   return (
     <footer className="w-full h-full grid md:grid-cols-3 max-w-7xl items-center pt-2 md:px-12 md:pt-0 border-t border-gray-700 dark:border-gray-800 border-opacity-5">
-      <div className="flex justify-self-center md:justify-self-start">
+      <div className="flex justify-self-center md:justify-self-start mt-4 md:mt-0">
         <a
           href="https://github.com/adilsonmandlate"
           rel="nofollow noopener noreferrer"
@@ -66,7 +66,7 @@ export const Footer = ({ ...props }) => {
         </a>
       </div>
 
-      <div className="dark:text-gray-50 text-gray-800 justify-self-center">
+      <div className="flex dark:text-gray-50 text-gray-800 justify-self-center my-7 md:my-0">
         <span className="sr-only">Adilson Mandlate</span>
         <svg
           width="173"
@@ -79,9 +79,9 @@ export const Footer = ({ ...props }) => {
         </svg>
       </div>
 
-      <div className="text-sm justify-self-center md:justify-self-end">
+      <p className="text-sm flex justify-self-center md:justify-self-end">
         @ {new Date().getFullYear()}
-      </div>
+      </p>
     </footer>
   );
 };

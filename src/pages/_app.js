@@ -6,9 +6,9 @@ import { Navbar } from "../components/Navbar";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
-      <div className="grid grid-rows-app min-h-screen justify-items-center pt-40">
+      <div className="grid grid-rows-app min-h-screen justify-items-center pt-32">
         <Navbar />
-        <main className="max-w-5xl w-full px-6 md:px-12 h-full my-auto">
+        <main className="max-w-5xl w-full px-10 md:px-12 h-full my-auto">
           <Component {...pageProps} />
         </main>
         <Footer />
