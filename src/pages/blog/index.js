@@ -15,7 +15,7 @@ const BlogIndex = ({ posts }) => (
         Blog
       </h1>
 
-      <p>Once upon a time, I wrote about...</p>
+      <p className="text-lg">Once upon a time, I wrote about...</p>
     </header>
 
     <ul>

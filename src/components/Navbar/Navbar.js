@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const { resolvedTheme, setTheme } = useTheme();
+  const router = useRouter();
 
   return (
-    <nav className="flex flex-row items-center fixed top-0 right-0 left-0 justify-between max-w-7xl w-full mx-auto px-10 md:px-12 py-6 bg-white dark:bg-gray-900">
+    <nav className="flex flex-row items-center fixed z-10 top-0 right-0 left-0 justify-between max-w-7xl w-full mx-auto px-10 md:px-12 py-6 bg-white dark:bg-gray-900">
       <Link href="/">
         <a className="text-gray-800 dark:text-gray-50 no-underline">
           <Image
@@ -18,9 +20,17 @@ const Navbar = () => {
         </a>
       </Link>
 
-      <div className="flex">
-        <Link href="/blog/">
-          <a className="no-underline text-gray-800 dark:text-gray-50">Blog</a>
+      <div className="flex items-center">
+        <Link href="/work/">
+          <a
+            className={`no-underline text-sm transition-all duration-500 hover:text-custom-dark-green dark:hover:text-custom-green ${
+              router.pathname === "/work"
+                ? "text-custom-dark-green dark:text-custom-green"
+                : "text-gray-800 dark:text-gray-50"
+            } `}
+          >
+            Work
+          </a>
         </Link>
         <div className="text-gray-300 dark:text-gray-500 mx-7">•</div>
         <button
@@ -33,11 +43,11 @@ const Navbar = () => {
             viewBox="0 0 24 24"
             fill="currentColor"
             stroke="currentColor"
-            className="w-4 h-4"
+            className="w-4 h-4 transition-all duration-500 hover:text-custom-dark-green dark:hover:text-custom-green"
           >
             {resolvedTheme === "dark" ? (
               <>
-                <circle cx="12" cy="12" r="5" />
+                <circle cx="12" cy="12" r="5"></circle>
                 <line x1="12" y1="1" x2="12" y2="3" />
                 <line x1="12" y1="21" x2="12" y2="23" />
                 <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
