@@ -22,6 +22,65 @@ html {
   scroll-behavior: smooth;
 }
 
+.project {
+  margin-bottom: 80px;
+}
+
+.project .project-content {
+  position: relative;
+  z-index: 1;
+  grid-area: 1 / 1 / -1 / 7;
+}
+
+.project:nth-of-type(2n + 2) .project-content {
+  @apply col-project-detail;
+  text-align: right;
+}
+
+.project:nth-of-type(2n + 2) .project-image {
+  grid-column: 1 / 8;
+}
+
+.project-content .project-content__description {
+  box-shadow: 0 20px 30px -20px rgba(2, 12, 27, 0.7);
+  padding: 40px 30px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.project .project-image {
+  position: relative;
+  grid-area: 1 / 6 / -1 / -1;
+  opacity: 0.6;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.project .project-image:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .project .project-content,
+  .project .project-image {
+    grid-area: 1 / -1;
+  }
+
+  .project:nth-of-type(2n + 2) .project-content {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+
+  .project:nth-of-type(2n + 2) .project-image {
+    grid-column: 1 / -1;
+  }
+
+  .project-content .project-content__description {
+    background-color: #11182799 !important;
+    border-radius: 0;
+    padding-left: 0;
+  }
+}
+
 /** Code snippets styling */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
