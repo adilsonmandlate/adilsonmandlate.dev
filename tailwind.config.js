@@ -16,6 +16,13 @@ module.exports = {
         app: "1fr 100px",
         mobile: "1fr 140px",
       },
+      gridTemplateColumns: {
+        project: "repeat(12, 1fr)",
+      },
+      gridColumn: {
+        "project-detail": "7/-1",
+        "project-detail-left": "1/8",
+      },
       minHeight: {
         app: "calc(100vh - 50px)",
       },
@@ -24,6 +31,8 @@ module.exports = {
       },
       textColor: {
         title: "#2c3e50",
+        "custom-green": "#64ffda",
+        "custom-dark-green": "#07624b",
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -31,7 +40,7 @@ module.exports = {
             color: theme("colors.gray.800"),
             a: {
               extends: "underline",
-              color: theme("colors.green.500"),
+              color: "#07624b",
             },
           },
         },
@@ -40,6 +49,10 @@ module.exports = {
             color: theme("colors.gray.50"),
             "h1,h2,h3,h4,h5,h6, p": {
               color: theme("colors.gray.50"),
+            },
+            a: {
+              extends: "underline",
+              color: "#64ffda",
             },
             strong: {
               color: theme("colors.gray.50"),
