@@ -20,7 +20,7 @@ module.exports = {
         project: "repeat(12, 1fr)",
       },
       gridColumn: {
-        "project-detail": "7/-1",
+        "project-detail": "3/-1",
         "project-detail-left": "1/8",
       },
       minHeight: {
