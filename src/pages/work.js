@@ -1,8 +1,6 @@
 import matter from "gray-matter";
 import Head from "next/head";
-import Image from "next/image";
 import { Fragment } from "react";
-import { BlogPost } from "../components/BlogPost";
 import { getAllProjectsData } from "../lib/api";
 
 const Work = ({ projects }) => (
@@ -42,14 +40,6 @@ const Work = ({ projects }) => (
                 </span>
               ))}
             </div>
-          </div>
-          <div className="project-image">
-            <Image
-              src={`/${project.image}`}
-              alt={`${project.title} preview image`}
-              width={600}
-              height={400}
-            />
           </div>
         </li>
       ))}
