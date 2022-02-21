@@ -29,7 +29,7 @@ html {
 .project .project-content {
   position: relative;
   z-index: 1;
-  grid-area: 1 / 1 / -1 / 7;
+  grid-area: 1 / 1 / -1 / 10;
 }
 
 .project:nth-of-type(2n + 2) .project-content {
