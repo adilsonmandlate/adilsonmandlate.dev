@@ -13,8 +13,8 @@ module.exports = {
         sans: ["Inter", ...fontFamily.sans],
       },
       gridTemplateRows: {
-        app: "1fr 100px",
-        mobile: "1fr 140px",
+        app: "1fr 90px",
+        mobile: "1fr 90px",
       },
       gridTemplateColumns: {
         project: "repeat(12, 1fr)",
@@ -27,7 +27,7 @@ module.exports = {
         app: "calc(100vh - 50px)",
       },
       height: {
-        main: "calc(100% - 10rem)",
+        main: "100%",
       },
       textColor: {
         title: "#2c3e50",
