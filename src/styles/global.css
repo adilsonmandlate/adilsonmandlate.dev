@@ -64,12 +64,6 @@ html {
   .project:nth-of-type(2n + 2) .project-image {
     grid-column: 1 / -1;
   }
-
-  .project-content .project-content__description {
-    background-color: #11182799 !important;
-    border-radius: 0;
-    padding-left: 0;
-  }
 }
 
 /** Code snippets styling */
