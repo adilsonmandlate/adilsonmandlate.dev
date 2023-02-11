@@ -4,7 +4,7 @@ import { format, parseISO } from "date-fns";
 const Post = ({ title, description, slug, date }) => {
   return (
     <li className="pb-16">
-      <Link href={`/blog/${slug}`}>
+      <Link href={`/thoughts/${slug}`}>
         <a className="w-full no-underline">
           <div>
             <h2 className="text-xl font-medium md:text-3xl mb-1 text-gray-800 dark:text-gray-50">

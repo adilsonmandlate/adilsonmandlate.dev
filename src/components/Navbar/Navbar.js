@@ -32,6 +32,17 @@ const Navbar = () => {
             Work
           </a>
         </Link>
+        <Link href="/thoughts/">
+          <a
+            className={`no-underline text-sm ml-7 transition-all duration-500 hover:text-custom-dark-green dark:hover:text-custom-green ${
+              router.pathname === "/thoughts"
+                ? "text-custom-dark-green dark:text-custom-green"
+                : "text-gray-800 dark:text-gray-50"
+            } `}
+          >
+            Thoughts
+          </a>
+        </Link>
         <div className="text-gray-300 dark:text-gray-500 mx-7">•</div>
         <button
           aria-label="Toggle dark mode"
@@ -47,7 +58,7 @@ const Navbar = () => {
           >
             {resolvedTheme === "dark" ? (
               <>
-                <circle cx="12" cy="12" r="5"></circle>
+                <circle cx="12" cy="12" r="5" />
                 <line x1="12" y1="1" x2="12" y2="3" />
                 <line x1="12" y1="21" x2="12" y2="23" />
                 <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
