@@ -1,4 +1,4 @@
-export const Footer = ({ ...props }) => {
+export const Footer = () => {
   return (
     <footer className="w-full h-full grid md:grid-cols-2 max-w-7xl items-center pt-2 md:px-12 md:pt-0 border-t border-gray-700 dark:border-gray-800 border-opacity-5">
       <div className="flex justify-self-center md:justify-self-start mt-4 md:mt-0">
