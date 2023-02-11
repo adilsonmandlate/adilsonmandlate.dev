@@ -7,12 +7,12 @@ import { getAllPostsData } from "../../lib/api";
 const BlogIndex = ({ posts }) => (
   <Fragment>
     <Head>
-      <title>Blog - Adilson Mandlate | Front end developer</title>
+      <title>Thoughts - Adilson Mandlate | Front end developer</title>
     </Head>
 
     <header className="pb-16">
       <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-black dark:text-white">
-        Blog
+        Thoughts
       </h1>
 
       <p className="text-lg">Once upon a time, I wrote about...</p>
