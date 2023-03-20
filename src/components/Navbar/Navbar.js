@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -5,44 +6,36 @@ import { useRouter } from "next/router";
 
 const Navbar = () => {
   const { resolvedTheme, setTheme } = useTheme();
+  const [hasMounted, setHasMounted] = useState();
   const router = useRouter();
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   return (
     <nav className="flex flex-row items-center fixed z-10 top-0 right-0 left-0 justify-between max-w-7xl w-full mx-auto px-10 md:px-12 py-6 bg-white dark:bg-gray-900">
-      <Link href="/">
-        <a className="text-gray-800 dark:text-gray-50 no-underline">
-          <Image
-            src="/icon-512.png"
-            width={38}
-            height={38}
-            alt="Adilson Mandlate"
-          />
-        </a>
+      <Link href="/" className="text-gray-800 dark:text-gray-50 no-underline">
+        <Image
+          src="/icon-512.png"
+          width={38}
+          height={38}
+          alt="Adilson Mandlate"
+        />
       </Link>
 
       <div className="flex items-center">
-        <Link href="/work/">
-          <a
-            className={`no-underline text-sm transition-all duration-500 hover:text-custom-dark-green dark:hover:text-custom-green ${
-              router.pathname === "/work"
-                ? "text-custom-dark-green dark:text-custom-green"
-                : "text-gray-800 dark:text-gray-50"
-            } `}
-          >
-            Work
-          </a>
+        <Link
+          href="/work/"
+          className={`no-underline text-sm transition-all duration-500 hover:text-custom-dark-green dark:hover:text-custom-green ${
+            router.pathname === "/work"
+              ? "text-custom-dark-green dark:text-custom-green"
+              : "text-gray-800 dark:text-gray-50"
+          } `}
+        >
+          Work
         </Link>
-        <Link href="/thoughts/">
-          <a
-            className={`no-underline text-sm ml-7 transition-all duration-500 hover:text-custom-dark-green dark:hover:text-custom-green ${
-              router.pathname === "/thoughts"
-                ? "text-custom-dark-green dark:text-custom-green"
-                : "text-gray-800 dark:text-gray-50"
-            } `}
-          >
-            Thoughts
-          </a>
-        </Link>
+
         <div className="text-gray-300 dark:text-gray-500 mx-7">•</div>
         <button
           aria-label="Toggle dark mode"
@@ -56,7 +49,7 @@ const Navbar = () => {
             stroke="currentColor"
             className="w-4 h-4 transition-all duration-500 hover:text-custom-dark-green dark:hover:text-custom-green"
           >
-            {resolvedTheme === "dark" ? (
+            {hasMounted && resolvedTheme === "dark" ? (
               <>
                 <circle cx="12" cy="12" r="5" />
                 <line x1="12" y1="1" x2="12" y2="3" />
