@@ -14,8 +14,7 @@ const Post = ({ title, description, slug, date }) => {
               {description}
             </p>
             <span className="text-sm text-gray-500 dark:text-gray-400">
-              Post published on{" "}
-              <time>{format(parseISO(date), "MMMM dd, yyy")}</time>
+              Published on <time>{format(parseISO(date), "MMMM dd, yyy")}</time>
             </span>
           </div>
         </a>

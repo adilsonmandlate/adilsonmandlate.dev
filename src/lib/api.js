@@ -1,4 +1,3 @@
-import matter from "gray-matter";
 import fs from "fs";
 import { join } from "path";
 

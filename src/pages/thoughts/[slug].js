@@ -21,7 +21,7 @@ export default function Post({ source, frontMatter }) {
       </h1>
       <div className="flex flex-row justify-start items-center text-sm mt-5 mb-5 text-gray-500 dark:text-gray-300">
         <span>
-          Post published on{" "}
+          Published on{" "}
           <time>{format(parseISO(frontMatter.date), "MMMM dd, yyy")}</time>,
           with about {frontMatter.readingTime.text} time
         </span>
