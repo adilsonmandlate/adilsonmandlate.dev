@@ -69,7 +69,7 @@ export const Footer = () => {
         </a>
       </div>
 
-      <p className="text-sm flex justify-self-center md:justify-self-end">
+      <p className="text-sm hidden justify-self-center md:justify-self-end md:flex">
         @ {new Date().getFullYear()}
       </p>
     </footer>

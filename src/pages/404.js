@@ -17,10 +17,7 @@ export default function Custom404() {
 
       <p className="text-xl leading-9 max-w-4xl font-sans text-gray-800 dark:text-gray-50">
         Sorry, but the page you're trying to get doesn't exist. Maybe go{" "}
-        <Link href="/">
-          <a>home</a>
-        </Link>
-        ?
+        <Link href="/">home</Link>?
       </p>
     </Fragment>
   );
