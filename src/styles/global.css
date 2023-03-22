@@ -34,8 +34,8 @@ html {
 
 .project-content .project-content__description {
   box-shadow: 0 20px 30px -20px rgba(2, 12, 27, 0.7);
-  padding: 40px 30px;
-  margin: 20px 0;
+  padding: 30px 10px;
+  margin: 0;
   border-radius: 5px;
 }
 

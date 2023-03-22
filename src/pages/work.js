@@ -14,7 +14,7 @@ const Work = ({ projects }) => (
         Work
       </h1>
 
-      <p className="text-lg">Here are some of the things I've built</p>
+      <p className="text-sm">Here are some of the things I've built</p>
     </header>
 
     <ul>
@@ -27,7 +27,7 @@ const Work = ({ projects }) => (
             <h2 className="uppercase font-semibold text-custom-dark-green dark:text-custom-green">
               {project.title}
             </h2>
-            <div className="project-content__description bg-white dark:bg-gray-900">
+            <div className="text-sm leading-6 project-content__description bg-white dark:bg-gray-900">
               <p>{project.description}</p>
             </div>
             <div>
