@@ -16,11 +16,11 @@ export default function Post({ source, frontMatter }) {
         </title>
       </Head>
 
-      <h1 className="text-4xl md:text-5xl font-bold tracking-tight md:leading-tight">
+      <h1 className="text-4xl font-heading font-bold tracking-tight md:leading-tight">
         {frontMatter.title}
       </h1>
-      <div className="flex flex-row justify-start items-center text-sm mt-5 mb-5 text-gray-500 dark:text-gray-300">
-        <span>
+      <div className="flex flex-row justify-start items-center text-base mt-5 mb-5 text-black dark:text-white">
+        <span className=" text-gray-500">
           Published on{" "}
           <time>{format(parseISO(frontMatter.date), "MMMM dd, yyy")}</time>,
           with about {frontMatter.readingTime.text} time

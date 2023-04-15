@@ -9,12 +9,14 @@ const Work = ({ projects }) => (
       <title>Work - Adilson Mandlate | Front end developer</title>
     </Head>
 
-    <header className="pb-16">
-      <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-custom-dark-green dark:text-custom-green">
-        Work
+    <header className="pb-9">
+      <h1 className="text-5xl font-heading tracking-tight mb-4 bg-gradient-to-r from-green-400 via-teal-400 to-blue-700 inline-block text-transparent bg-clip-text">
+        Code. Eat. Sleep. Repeat.
       </h1>
 
-      <p className="text-sm">Here are some of the things I've built</p>
+      <p className="text-base">
+        Here you can find some of the projects I have been involved in...
+      </p>
     </header>
 
     <ul>
@@ -24,10 +26,10 @@ const Work = ({ projects }) => (
           className="grid grid-cols-project items-center project"
         >
           <div className="project-content">
-            <h2 className="uppercase font-semibold text-custom-dark-green dark:text-custom-green">
+            <h2 className="text-lg font-heading font-bold text-black dark:text-white">
               {project.title}
             </h2>
-            <div className="text-sm leading-6 project-content__description bg-white dark:bg-gray-900">
+            <div className="text-base project-content__description">
               <p>{project.description}</p>
             </div>
             <div>
