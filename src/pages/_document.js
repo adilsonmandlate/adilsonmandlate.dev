@@ -8,7 +8,14 @@ class MyDocument extends Document {
           <meta name="robots" content="follow, index" />
           <link
             rel="preload"
-            href="/fonts/InterVar.woff2"
+            href="/fonts/Biotif.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/Neuzeit.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
@@ -63,7 +70,7 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/site.webmanifest" />
         </Head>
-        <body className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 min-h-screen">
+        <body className="bg-white font-sans text-gray-900 dark:bg-gray-900 dark:text-gray-200 min-h-screen">
           <Main />
           <NextScript />
         </body>

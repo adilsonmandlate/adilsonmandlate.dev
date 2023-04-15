@@ -9,14 +9,16 @@ export default function Home() {
       </Head>
 
       <div className="flex flex-col justify-center h-main">
-        <h1 className="text-5xl md:text-7xl font-serif text-title dark:text-white font-bold mb-5">
+        <h1 className="text-5xl font-heading text-title dark:text-white mb-5">
           Adilson Mandlate
         </h1>
 
-        <p className="text-sm leading-6  max-w-2xl font-sans text-gray-800 dark:text-white">
-          I'm a front end developer who makes things work beautifully, with an
-          experience creating bespoke complex systems and products that have
-          positive impact on the world.
+        <p className="text-base leading-7 max-w-2xl text-gray-800 dark:text-white">
+          I am a frontend developer who makes things work beautifully, with an
+          experience creating bespoke complex products that are tailored to meet
+          the needs of my clients, with a creative and analytical approach
+          ensuring that the end result is not only visually appealing, but also
+          highly functional.
         </p>
       </div>
     </Fragment>

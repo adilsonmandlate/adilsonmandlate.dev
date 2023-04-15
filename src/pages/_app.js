@@ -2,14 +2,23 @@ import "../styles/global.css";
 import { ThemeProvider } from "next-themes";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
-    <ThemeProvider attribute="class">
-      <div className="grid grid-rows-mobile md:grid-rows-app min-h-screen justify-items-center pt-32">
+    <ThemeProvider attribute="class" defaultTheme="dark">
+      <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="max-w-5xl w-full px-10 md:px-12 h-full my-auto">
-          <Component {...pageProps} />
+        <main
+          className={`grid flex-col flex-1 my-0 mx-auto max-w-3xl w-full py-32 px-8 md:px-0 h-full ${
+            router.pathname !== "/" ? "pb-0" : ""
+          }`}
+        >
+          <div>
+            <Component {...pageProps} />
+          </div>
         </main>
         <Footer />
       </div>
