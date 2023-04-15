@@ -10,11 +10,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...fontFamily.sans],
+        sans: ["Biotif", ...fontFamily.sans],
+        heading: ["Neuzeit", ...fontFamily.sans],
+      },
+      flex: {
+        1: "1 1 0%",
       },
       gridTemplateRows: {
-        app: "1fr 90px",
-        mobile: "1fr 90px",
+        app: "1fr 50px",
+        mobile: "1fr 50px",
       },
       gridTemplateColumns: {
         project: "repeat(12, 1fr)",
@@ -37,7 +41,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme("colors.gray.800"),
+            color: theme("colors.black"),
             a: {
               extends: "underline",
               color: "#07624b",
@@ -46,16 +50,16 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme("colors.gray.50"),
+            color: theme("colors.white"),
             "h1,h2,h3,h4,h5,h6, p": {
-              color: theme("colors.gray.50"),
+              color: theme("colors.white"),
             },
             a: {
               extends: "underline",
               color: "#64ffda",
             },
             strong: {
-              color: theme("colors.gray.50"),
+              color: theme("colors.white"),
             },
           },
         },
