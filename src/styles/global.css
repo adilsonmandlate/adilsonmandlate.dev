@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Biotif";
   font-style: normal;
-  font-weight: 100, 800;
+  font-weight: 400;
   font-display: optional;
-  src: url(/fonts/InterVar.woff2) format("woff2");
+  src: url(/fonts/Biotif.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Neuzeit";
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url(/fonts/Neuzeit.woff2) format("woff2");
 }
 
 @layer base {
@@ -23,7 +31,7 @@ html {
 }
 
 .project {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .project .project-content {
@@ -33,10 +41,8 @@ html {
 }
 
 .project-content .project-content__description {
-  box-shadow: 0 20px 30px -20px rgba(2, 12, 27, 0.7);
-  padding: 30px 10px;
-  margin: 0;
-  border-radius: 5px;
+  padding: 3px 0;
+  margin: 0 0 5px 0;
 }
 
 .project .project-image {
