@@ -21,10 +21,7 @@ const Work = ({ projects }) => (
 
     <ul>
       {projects.map((project) => (
-        <li
-          key={project.date}
-          className="grid grid-cols-project items-center project"
-        >
+        <li key={project.date} className="project">
           <div className="project-content">
             <h2 className="text-lg font-heading font-bold text-black dark:text-white">
               {project.title}
