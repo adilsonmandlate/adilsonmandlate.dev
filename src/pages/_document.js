@@ -70,7 +70,7 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/site.webmanifest" />
         </Head>
-        <body className="bg-white font-sans text-gray-900 dark:bg-gray-900 dark:text-gray-200 min-h-screen">
+        <body className="bg-white font-sans text-gray-900 dark:bg-black dark:text-white min-h-screen">
           <Main />
           <NextScript />
         </body>

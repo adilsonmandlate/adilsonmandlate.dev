@@ -12,8 +12,8 @@ function MyApp({ Component, pageProps }) {
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main
-          className={`grid flex-col flex-1 my-0 mx-auto max-w-3xl w-full py-32 px-8 h-full ${
-            router.pathname !== "/" ? "pb-0" : ""
+          className={`grid flex-col flex-1 my-0 mx-auto max-w-4xl w-full py-32 px-8 h-full ${
+            router.pathname !== "/" ? "pb-0" : "pt-56"
           }`}
         >
           <div>
