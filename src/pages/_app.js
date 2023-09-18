@@ -3,6 +3,7 @@ import { ThemeProvider } from "next-themes";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }) {
         </main>
         <Footer />
       </div>
+      <Analytics />
     </ThemeProvider>
   );
 }
