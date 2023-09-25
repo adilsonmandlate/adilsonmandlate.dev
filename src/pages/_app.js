@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         <Navbar />
         <main
           className={`grid flex-col flex-1 my-0 mx-auto max-w-4xl w-full py-32 px-8 h-full ${
-            router.pathname !== "/" ? "pb-0" : "pt-56"
+            router.pathname !== "/" ? "pb-0" : "pt-20 pb-0 sm:pt-56 sm:pb-8"
           }`}
         >
           <div>
