@@ -6,6 +6,7 @@ class MyDocument extends Document {
       <Html lang="en" className="min-h-full">
         <Head>
           <meta name="robots" content="follow, index" />
+          <meta name="theme-color" content="#000000" />
           <link
             rel="preload"
             href="/fonts/Biotif.woff2"
@@ -26,7 +27,7 @@ class MyDocument extends Document {
           />
           <meta
             name="description"
-            content="Adilson Mandlate | Front end developer based in Mozambique."
+            content="Adilson Mandlate | Front end developer"
           />
           <meta
             property="og:description"

@@ -10,7 +10,7 @@ const Work = ({ projects }) => (
     </Head>
 
     <header className="pb-9">
-      <h1 className="text-5xl font-heading tracking-tight mb-4 bg-gradient-to-r from-red-600 via-orange-400 to-yellow-400 inline-block text-transparent bg-clip-text">
+      <h1 className="text-5xl font-heading tracking-tight mb-4 bg-gradient-to-r from-[#1abc9c]  to-[#3498db] inline-block text-transparent bg-clip-text">
         Code. Eat. Sleep. Repeat.
       </h1>
 
@@ -26,7 +26,7 @@ const Work = ({ projects }) => (
             <h2 className="text-lg font-heading font-bold text-black dark:text-white">
               {project.title}
             </h2>
-            <div className="text-base project-content__description">
+            <div className="text-base leading-7 project-content__description">
               <p>{project.description}</p>
             </div>
             <div>

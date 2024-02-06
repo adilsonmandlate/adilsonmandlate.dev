@@ -1,14 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const router = useRouter();
+  const activeRoute = usePathname();
 
   return (
-    <nav className="fixed z-10 top-0 right-0 left-0 max-w-4xl w-full mx-auto py-6 px-6 lg:px-0">
-      <div className="flex flex-row font-bold items-center justify-between rounded-2xl py-2 px-4 bg-gray-900 bg-opacity-5 dark:bg-white dark:bg-opacity-5 backdrop-blur">
-        <Link href="/" className="text-gray-800 dark:text-white no-underline">
+    <nav className="fixed z-10 top-0 right-0  left-0 max-w-[290px] w-full mx-auto py-6 px-6 lg:px-0">
+      <div className="flex flex-row font-bold items-center justify-between rounded-3xl py-1 px-2 bg-gray-900 bg-opacity-5 dark:bg-white dark:bg-opacity-5 backdrop-blur">
+        <Link
+          href="/"
+          className={`no-underline px-4 py-1 rounded-2xl  duration-500 ${
+            activeRoute === "/" && "bg-custom-green"
+          }`}
+        >
           <Image
             src="/icon-512.png"
             width={38}
@@ -20,10 +25,8 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link
             href="/work/"
-            className={`no-underline text-sm transition-all duration-500 hover:text-custom-dark-green dark:hover:text-custom-green ${
-              router.pathname.includes("/work")
-                ? "text-custom-dark-green dark:text-custom-green"
-                : "text-gray-800 dark:text-white"
+            className={`no-underline text-sm transition-all text-white px-4 py-3 rounded-2xl duration-500 ${
+              activeRoute === "/work" && "bg-custom-green"
             } `}
           >
             Work

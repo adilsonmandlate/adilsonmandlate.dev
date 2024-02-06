@@ -33,6 +33,9 @@ module.exports = {
       height: {
         main: "100%",
       },
+      colors: {
+        "custom-green": "#07624b",
+      },
       textColor: {
         title: "#2c3e50",
         "custom-green": "#64ffda",

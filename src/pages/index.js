@@ -13,7 +13,7 @@ export default function Home() {
           Adilson Mandlate
         </h1>
 
-        <p className="text-lg mt-7 md:mt-0 md:ml-16 leading-7 max-w-2xl text-gray-800 dark:text-white">
+        <p className="text-lg mt-7 md:mt-0 md:ml-16 leading-8 max-w-2xl text-gray-800 dark:text-white">
           A frontend developer who makes things work beautifully, with an
           experience creating bespoke complex products that are tailored to meet
           the needs of my clients, with a creative and analytical approach
