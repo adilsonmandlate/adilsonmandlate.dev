@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -6,32 +8,42 @@ const Navbar = () => {
   const activeRoute = usePathname();
 
   return (
-    <nav className="fixed z-10 top-0 right-0  left-0 max-w-[290px] w-full mx-auto py-6 px-6 lg:px-0">
-      <div className="flex flex-row font-bold items-center justify-between rounded-3xl py-1 px-2 bg-gray-900 bg-opacity-5 dark:bg-white dark:bg-opacity-5 backdrop-blur">
+    <nav className="fixed z-10 top-0 right-0 left-0 w-full max-w-xs mx-auto flex justify-center py-5 px-4">
+      <div
+        className="flex flex-row items-center justify-between gap-4 rounded-full px-4 shadow-2xl  w-full"
+        style={{
+          background:
+            "linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))",
+          backdropFilter: "blur(20px) saturate(180%)",
+          WebkitBackdropFilter: "blur(20px) saturate(180%)",
+          border: "1px solid rgba(255, 255, 255, 0.18)",
+          boxShadow:
+            "0 8px 32px 0 rgba(0, 0, 0, 0.37), inset 0 1px 0 0 rgba(255, 255, 255, 0.1)",
+        }}
+      >
         <Link
           href="/"
-          className={`no-underline px-4 py-1 rounded-2xl  duration-500 ${
-            activeRoute === "/" && "bg-custom-green"
+          className={`no-underline p-2 rounded-full transition-all duration-300 hover:bg-white/10 ${
+            activeRoute === "/" && "bg-white/10"
           }`}
         >
           <Image
             src="/icon-512.png"
-            width={38}
-            height={38}
+            width={32}
+            height={32}
             alt="Adilson Mandlate"
+            className="rounded-full"
           />
         </Link>
 
-        <div className="flex items-center">
-          <Link
-            href="/work/"
-            className={`no-underline text-sm transition-all text-white px-4 py-3 rounded-2xl duration-500 ${
-              activeRoute === "/work" && "bg-custom-green"
-            } `}
-          >
-            Work
-          </Link>
-        </div>
+        <Link
+          href="/work"
+          className={`text-sm font-medium px-4 py-2 rounded-full transition-all duration-300 hover:text-white/80 no-underline decoration-1 underline-offset-4 ${
+            activeRoute === "/work" && "font-bold no-underline"
+          }`}
+        >
+          Work
+        </Link>
       </div>
     </nav>
   );

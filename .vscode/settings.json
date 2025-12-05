@@ -1,0 +1,12 @@
+{
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "editor.fontSize": 15,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "'FiraCode Nerd Font', Consolas, 'Courier New', monospace",
+  "postman.settings.dotenv-detection-notification-visibility": false
+}

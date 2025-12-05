@@ -46,7 +46,7 @@ export const Footer = () => {
       </a>
 
       <a
-        href="mailto:me@adilsonmandlate.dev"
+        href="mailto:adilsonmandlate@gmail.com"
         className="text-gray-600 dark:text-gray-400 no-underline"
       >
         <span className="text-sm hidden md:inline">E-mail</span>
